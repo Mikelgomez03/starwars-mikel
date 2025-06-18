@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARWARS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>STARWARS</h1>
+        <nav>
+            <button class="nav-button active" data-resource="people">Personajes</button>
+            <button class="nav-button" data-resource="species">Especies</button>
+            <button class="nav-button" data-resource="planets">Planetas</button>
+            <button class="nav-button" data-resource="vehicles">Vehículos</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="list-section">
+            <h2></h2>
+            <div id="loading-list" class="loading">Cargando...</div>
+            <ul id="items-container">
+            </ul>
+        </section>
+
+        <section id="details-section" class="hidden">
+            <h2>Detalles</h2>
+            <button id="back-button">&larr; Volver a la Lista</button>
+            <div id="details-content">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Mikel Gomez <a href="https://swapi.py4e.com/" target="_blank"></a>.</p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
